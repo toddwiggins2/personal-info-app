@@ -1,10 +1,9 @@
 .App {
+  background: #282c34;
+  display: grid;
+  align-items: center;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  justify-items: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -18,14 +17,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  max-width: 650px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +30,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.input-box {
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 0;
+  width: 100%;
+}
+
+.btn-add {
+  border-radius: 8px;
+  padding: 0.5em;
+  border: none;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+
+.btn-add:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+.btn-delete {
+  border-radius: 8px;
+  padding: 0.5em 3em;
+  border: none;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  margin-top: 8px;
+}
+
+.btn-delete:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+.search-div {
+  display: grid;
+  gap: 0.25em;
+}
+
+.list-div {
+  padding: 0.25em;
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+  font-size: 1rem;
+  justify-content: space-between;
+}
+
+.list-todos {
+  padding: 0;
+  margin: 0;
 }

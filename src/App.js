@@ -6,27 +6,33 @@ import "./App.css";
 const list = [
   {
     id: 1,
-    firstname: `Todd`,
-    lastname: `Wiggins`,
+    firstname: `Jeff`,
+    lastname: `Smith`,
     age: `40`,
   },
   {
     id: 2,
-    firstname: `Kristen`,
-    lastname: `Wiggins`,
+    firstname: `Jane`,
+    lastname: `Knuckles`,
     age: `43`,
   },
   {
     id: 3,
-    firstname: `Jeff`,
-    lastname: `Wiggins`,
+    firstname: `Petry`,
+    lastname: `McDonald`,
     age: `68`,
   },
   {
     id: 4,
     firstname: `Vickey`,
-    lastname: `Wiggins`,
+    lastname: `Jones`,
     age: `67`,
+  },
+  {
+    id: 5,
+    firstname: `Matt`,
+    lastname: `Bernard`,
+    age: `25`,
   },
 ];
 
@@ -90,11 +96,11 @@ function App() {
         {item.firstname} {item.lastname} age {item.age}
       </ul>
       <div style={{ display: "flex", gap: "0.5em" }}>
+        <button onClick={() => handleUpdate(item)} className="btn-update">
+          Update
+        </button>
         <button onClick={() => handleDelete(item.id)} className="btn-delete">
           Delete
-        </button>
-        <button onClick={() => handleUpdate(item)} className="btn-delete">
-          Update
         </button>
       </div>
     </div>

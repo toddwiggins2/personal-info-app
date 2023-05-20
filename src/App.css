@@ -54,6 +54,8 @@
 }
 
 .btn-delete {
+  background-color: #fb5050;
+  color:white;
   border-radius: 8px;
   padding: 0.5em 3em;
   border: none;
@@ -62,6 +64,21 @@
 }
 
 .btn-delete:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+.btn-update {
+  border-radius: 8px;
+  padding: 0.5em 3em;
+  border: none;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  margin-top: 8px;
+}
+
+.btn-update:active {
   transform: scale(0.98);
   /* Scaling button to 0.98 to its original size */
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
